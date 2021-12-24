@@ -23,7 +23,7 @@ public class MainApp {
 		
 		CreateAccount create = new CreateAccount();
 		create.signIn();
-		create.Create("test@newtest52.com");
+		create.Create("test@newtestlast.com");
 		create.DetailAccount(0, "First Test Name", "Last Test Name", "Fj2831", "28", 
 				"june", "1998", "test st.", "test city",2, "15414", "081111111111");
 		
