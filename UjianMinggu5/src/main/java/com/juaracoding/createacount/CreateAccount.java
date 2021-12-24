@@ -1,4 +1,4 @@
-package com.juaracoding.pages.createacount;
+package com.juaracoding.createacount;
 
 import java.util.ArrayList;
 import java.util.List;

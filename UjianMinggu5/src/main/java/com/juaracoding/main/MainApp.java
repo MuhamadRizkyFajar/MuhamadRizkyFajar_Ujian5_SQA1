@@ -10,8 +10,8 @@ import org.openqa.selenium.WebDriver;
 
 import com.juaracoding.addtocart.AddTocart;
 import com.juaracoding.checkout.Checkout;
+import com.juaracoding.createacount.CreateAccount;
 import com.juaracoding.driver.DriverSingleton;
-import com.juaracoding.pages.createacount.CreateAccount;
 
 public class MainApp {
 	
