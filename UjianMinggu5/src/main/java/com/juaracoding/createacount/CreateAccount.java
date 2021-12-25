@@ -62,8 +62,14 @@ public class CreateAccount {
 	@FindBy(xpath = "//*[@type='checkbox']")
 	private List<WebElement> btnchecker;
 	
+	@FindBy(css = "#company")
+	private WebElement inputcompany;
+	
 	@FindBy( css = "#address1")
 	private WebElement inputaddress;
+	
+	@FindBy( css = "#address2")
+	private WebElement inputaddress2;
 	
 	@FindBy(css = "#city")
 	private WebElement inputcity;
@@ -74,6 +80,12 @@ public class CreateAccount {
 	@FindBy(css = "#postcode")
 	private WebElement inputpostcode;
 	
+	@FindBy(css = "#other")
+	private WebElement inputadditional;
+	
+	@FindBy(css = "#phone")
+	private WebElement inputhomephone;
+	
 	@FindBy(css = "#phone_mobile")
 	private WebElement inputphonenumber;
 	
@@ -81,8 +93,8 @@ public class CreateAccount {
 	private WebElement btnsubmit;
 	
 	public void DetailAccount(int select, String firstname, String lastname, String password, 
-			String day, String month, String year,String address, String city,int selectstate, 
-			String postcode, String phonenumber) {
+			String day, String month, String year, String company, String address, String address2, String city,int selectstate, 
+			String postcode, String additional, String homephone,String phonenumber) {
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -105,10 +117,14 @@ public class CreateAccount {
 		btnchecker.get(0).click();
 		btnchecker.get(1).click();
 		js.executeScript("window.scrollBy(0,500);");
+		inputcompany.sendKeys(company);
 		inputaddress.sendKeys(address);
+		inputaddress2.sendKeys(address2);
 		inputcity.sendKeys(city);
 		lstState(selectstate);
 		inputpostcode.sendKeys(postcode);
+		inputadditional.sendKeys(additional);
+		inputhomephone.sendKeys(homephone);
 		inputphonenumber.sendKeys(phonenumber);
 		btnsubmit.click();
 	}

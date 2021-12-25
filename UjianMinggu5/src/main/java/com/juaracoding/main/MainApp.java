@@ -25,7 +25,7 @@ public class MainApp {
 		create.signIn();
 		create.Create("test@newtestlast.com");
 		create.DetailAccount(0, "First Test Name", "Last Test Name", "Fj2831", "28", 
-				"june", "1998", "test st.", "test city",2, "15414", "081111111111");
+				"june", "1998", "Test Company","test st.", "No.69","test city",2, "15414", " near by Mcd", "0117653289", "081111111111");
 		
 		AddTocart add = new AddTocart();
 		add.menuDress(2,2);
